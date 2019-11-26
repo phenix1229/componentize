@@ -11,25 +11,26 @@
     <div class="app">
         <div class="jumbotron"><h1>Todo</h1>
             <p class="lead">Keep track of all your pending tasks.</p>
-            </div>
-      <!-- <h1>Todo</h1> -->
-        <section>
-          <div class="input-group mb-3">
+        </div>
+        <!-- <section> -->
+          <div class="input-group mb-3" id="add-btn">
             <div class="input-group-prepend">
               <button class="add-todo btn btn-outline-secondary">ADD</button>
             </div>
             <input type="text" class="todo-input form-control" placeholder="Add to your todo list!" aria-label="Example text with button addon" aria-describedby="button-addon1">
           </div>
-        </section>
-        <section>
-          <div class="input-group mb-3">
+        <!-- </section>
+        <section> -->
+          <div class="input-group mb-3" id="remove-btn">
             <div class="input-group-prepend">
               <button class="remove-todo btn btn-outline-secondary">REMOVE</button>
             </div>
             <input type="text" class="index-input form-control" placeholder="Remove from your todo list!" aria-label="Recipient's username" aria-describedby="button-addon2">
           </div>
-        </section>
-      <ol class="todo-list"></ol>
+        <!-- </section> -->
+        <div class="list-group" id="list">
+          <ol class="todo-list"></ol>
+        </div>
     </div>
     <script src = "./add.js"></script>
     <script src = "./remove.js"></script>

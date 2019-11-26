@@ -1,6 +1,47 @@
-.jumbotron{
-    background-color: 
-    bacgg
-    ;
+.app {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 20% 10% 10% 70%;
+    grid-template-areas:  
+        'jumbotron jumbotron jumbotron'
+        '. add-btn .'
+        '. remove-btn .'
+        '. list .'
 
+        ;
+}
+
+.jumbotron {
+    grid-area: jumbotron;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(36,103,194,0.86) 49%, rgba(0,212,255,1) 100%); 
+    text-align: center;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+#add-btn {
+    grid-area: add-btn;
+}
+
+#remove-btn {
+    grid-area: remove-btn;
+}
+
+#list {
+    grid-area: list;
+    padding: 30px;
+}
+
+.btn {
+    background: rgba(2, 0, 36, 0.082);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(94,84,142,1) 49%, rgba(0,212,255,1) 100%);
+    color: rgb(194, 177, 155);
+}
+
+li {
+    font-size: 2em;
+    transition: 2s;
 }
