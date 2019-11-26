@@ -4,24 +4,34 @@
     <title>ToDOM</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div class="app">
-      <h1>Todo</h1>
+        <div class="jumbotron"><h1>Todo</h1>
+            <p class="lead">Keep track of all your pending tasks.</p>
+            </div>
+      <!-- <h1>Todo</h1> -->
         <section>
-          <label for="todo-input">Add to your todo list!</label>
-          <input class="todo-input "type="text" name="todo-input">
-          <button class="add-todo">ADD</button>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <button class="add-todo btn btn-outline-secondary">ADD</button>
+            </div>
+            <input type="text" class="todo-input form-control" placeholder="Add to your todo list!" aria-label="Example text with button addon" aria-describedby="button-addon1">
+          </div>
         </section>
         <section>
-          <label for="index-input">Remove an index from your todo list! (Counting from zero because coding.)</label>
-          <input class="index-input"type="text" name="index-input">
-          <button class="remove-todo">REMOVE</button>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <button class="remove-todo btn btn-outline-secondary">REMOVE</button>
+            </div>
+            <input type="text" class="index-input form-control" placeholder="Remove from your todo list!" aria-label="Recipient's username" aria-describedby="button-addon2">
+          </div>
         </section>
-      <ul class="todo-list"></ul>
+      <ol class="todo-list"></ol>
     </div>
-    <script src = "./remove.js"></script>
     <script src = "./add.js"></script>
+    <script src = "./remove.js"></script>
   </body>
 </html>
